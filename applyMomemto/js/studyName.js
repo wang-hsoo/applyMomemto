@@ -1,7 +1,8 @@
  const studyForm = new Array();
  const writeStudy = new Array();
  const studyInput = new Array();
- const saveStudy = ["", "", "", "", "", ""];
+ let saveStudy = ["", "", "", "", "", ""];
+
  const STUDYNAME = [
     "study1",
     "study2",
@@ -16,8 +17,6 @@
     writeStudy[i] = document.querySelector(`#stName${i+1}`);
     studyInput[i] = document.querySelector(`#study${i+1} input`);
 }
-
-
 
 
 function getStudy(event){
@@ -44,11 +43,21 @@ function paintStudy(study){
     }
 }
 
+
+
 for(let i = 0; i < STUDYNAME.length; i++){
-    console.log(saveStudy[i]);
-    if(saveStudy[i] !== ""){
-        paintStudy(saveStudy[i]);
+    loadName = localStorage.getItem(STUDYNAME[i]);
+    saveStudy[i] = localStorage.getItem(STUDYNAME[i]);
+    
+    
+    if(loadName !== null){
+        studyInput[i].classList.add("hidden");
+        paintStudy(loadName);
     }
+    
+
     studyForm[i].addEventListener("submit", getStudy, false);
+    
+   
     
 }
