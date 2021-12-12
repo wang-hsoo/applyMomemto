@@ -1,0 +1,135 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.hidden{
+    display: none;
+}
+#container{
+	width: 90%;
+	height: 100vh;
+}
+.section{
+	text-align: center;
+	margin-top: 30px;
+	margin-right: 2%;
+    width: 30%;
+    display: inline-block;
+	height: 430px;
+	border: solid 1px #ffffff;
+	border-radius: 10px;
+}
+#study1 , #study2 , #study3 , #study4  , #study5 , #study6{
+	width: 60%;
+	
+}
+
+#study1 input, #study2 input, #study3 input, #study4 input , #study5 input, #study6 input{
+	margin-top: 40px;
+	border: none;
+    background: transparent;
+    border-bottom:  3px solid #ffffff;
+    font-weight: bold;
+	width: 100%;
+	font-size: 20px;
+}
+
+#study1 input:focus, #study2 input:focus, #study3 input:focus, #study4 input:focus , #study5 input:focus, #study6 input:focus,
+#todo-form1 input:focus, #todo-form2 input:focus,#todo-form3 input:focus,#todo-form4 input:focus,#todo-form5 input:focus,#todo-form6 input:focus{
+	outline: none;
+	color: #ffffff;
+}
+
+#study1 input::placeholder, #study2 input::placeholder, #study3 input::placeholder, #study4 input::placeholder , #study5 input::placeholder, #study6 input::placeholder{
+	color: #ffffff;
+    font-size: 20px;
+}
+
+h2{
+	margin-top: 47px;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+#todo-form1 input, #todo-form2 input,#todo-form3 input,#todo-form4 input,#todo-form5 input,#todo-form6 input{
+	border: none;
+    background: transparent;
+    border-bottom:  2px solid #ffffff;
+    color: #ffffff;
+    height: 40px;
+    font-size: 15px;
+}
+
+#todo-form1 input::placeholder, #todo-form2 input::placeholder,#todo-form3 input::placeholder,#todo-form4 input::placeholder,#todo-form5 input::placeholder,#todo-form6 input::placeholder{
+	color: #ffffff;
+    font-size: 15px;
+}
+
+ul{
+	color: #ffffff;
+    width: 80%;
+    font-size: 15px;
+	overflow-y: scroll;
+	margin-top: 15px;
+	height: 280px;
+}
+ul li{
+	margin-top: 5px;
+}
+
+ul::-webkit-scrollbar{
+    width: 5px;
+}
+ul::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255); /*스크롤바의 색상*/
+}
+
+ul li button{
+	border: 0;
+    outline: 0;
+    background: transparent;
+    color: #ffffff;
+    font-size: 15px;
+	float: right;
+}
