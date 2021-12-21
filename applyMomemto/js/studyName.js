@@ -45,6 +45,8 @@ function paintStudy(study){
 
 
 
+
+
 for(let i = 0; i < STUDYNAME.length; i++){
     loadName = localStorage.getItem(STUDYNAME[i]);
     saveStudy[i] = localStorage.getItem(STUDYNAME[i]);
@@ -54,6 +56,15 @@ for(let i = 0; i < STUDYNAME.length; i++){
         studyInput[i].classList.add("hidden");
         paintStudy(loadName);
     }
+
+    writeStudy[i].addEventListener("click", () => {
+        localStorage.removeItem(STUDYNAME[i]);
+        writeStudy[i].classList.add("hidden");
+        studyInput[i].classList.remove("hidden");
+        studyInput[i].value = "";
+    });
+
+
     
 
     studyForm[i].addEventListener("submit", getStudy, false);

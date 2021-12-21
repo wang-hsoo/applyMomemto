@@ -93,6 +93,7 @@ h2{
 }
 
 #todo-form1 input, #todo-form2 input,#todo-form3 input,#todo-form4 input,#todo-form5 input,#todo-form6 input{
+	width: 50%;
 	border: none;
     background: transparent;
     border-bottom:  2px solid #ffffff;
@@ -132,4 +133,29 @@ ul li button{
     color: #ffffff;
     font-size: 15px;
 	float: right;
+}
+
+@media(max-width: 1200px){
+	.section{
+		width: 47%;
+		margin-right: 0;
+		margin-left: 2%;
+	}
+}
+
+@media(max-width: 768px){
+	.section{
+		width: 100%;
+	}
+}
+
+@media(max-width: 520px){
+	.section{
+		width: 100%;
+	}
+
+	ul li{
+		margin-top: 10px;
+	}
+	
 }
