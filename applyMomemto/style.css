@@ -90,6 +90,7 @@ h2{
 	font-weight: bold;
 	color: #ffffff;
 	font-size: 20px;
+	cursor: pointer;
 }
 
 #todo-form1 input, #todo-form2 input,#todo-form3 input,#todo-form4 input,#todo-form5 input,#todo-form6 input{
